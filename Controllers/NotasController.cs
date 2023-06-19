@@ -92,7 +92,7 @@ namespace iob_smart_webapi.Controllers
             _context.Notas.Add(nota);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetNota", new { id = nota.NotaId }, nota);
+            return CreatedAtAction(nameof(GetNota), new { id = nota.NotaId }, nota);
         }
 
         // DELETE: api/Notas/5
