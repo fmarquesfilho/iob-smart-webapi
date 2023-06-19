@@ -12,7 +12,7 @@ public class Contratacao
 
     public string? RazaoSocialEmpresa { get; set; }
 
-    public DateTime DataContratacao { get; set; }
+    public string? DataContratacao { get; set; }
 
     public decimal Salario { get; set; }
 }
