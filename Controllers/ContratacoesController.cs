@@ -92,7 +92,7 @@ namespace iob_smart_webapi.Controllers
             _context.Contratacao.Add(contratacao);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetContratacao", new { id = contratacao.ContratacaoId }, contratacao);
+            return CreatedAtAction(nameof(GetContratacao), new { id = contratacao.ContratacaoId }, contratacao);
         }
 
         // DELETE: api/Contratacoes/5
